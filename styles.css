@@ -35,20 +35,22 @@
 	background-color: transparent;
 	outline: 0px;
 	border: 0px;
+	max-width: 480px;
+	overflow: hidden;
 }
 
 .screen > .output {
 	font-size: 28px;
 }
 
-.key {
+.keys-container {
 	display: grid;
 	gap: 12px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	place-items: center;
 }
 
-.key > * {
+.keys-container > * {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -60,7 +62,7 @@
 	background-color: white;
 }
 
-.bigger-key {
+.equal-key {
 	height: 100%;
 	grid-row: span 2;
 }
